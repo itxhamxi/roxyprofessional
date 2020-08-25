@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+
+*{
+    margin:0;
+    padding:0;
+}
+.logo{
+    font-weight: lighter;
+    font-size:18px;
+}
+.navbar.active{
+background:white;
+}
+.jumbotron{
+    height: 100vh;
+    background-image: linear-gradient(#ffffff, rgb(219, 219, 126));
+}
+.course{
+   margin:auto;
+   text-align:center;
+   color: rgb(130, 167, 46);
+   
+}
+.course h1{
+    font-size:50px;
+    margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Carosusel */
+.course-wrapper{
+    margin:20px 20px;
+    height: 67vh;
+    padding-bottom: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* info-area*/
+.info-wrapper{
+    height: 44vh;
+    background:rgb(223, 223, 154);
+}
+.heading h3{
+    padding-top: 40px;
+}
+.number h3{
+    padding-top:80px
+}
+/* Footer */
+.footer-wrapper{
+    padding-top:20px;
+    background-color: aliceblue;
+}
+.footer-logo{
+    text-align: center
+}
+.footer-adress{
+    text-align: center;
+}
+
+.top{
+    width:50%;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+     transform: translate(-50%,-50%); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media quireies */
+@media only screen and (max-width: 1000px) {
+     
+    .heading h3{
+        padding-top: 40px;
+    }
+    .number h3{
+    padding-top: 0px;
+    }
+    .line{
+        width:50%
+    }
+    .info-wrapper{
+        height: 60vh;
+    }
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
